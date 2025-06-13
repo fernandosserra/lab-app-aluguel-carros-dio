@@ -55,9 +55,11 @@ lab-app-aluguel-carros-dio/
 ## 🚀 Executando Localmente (On‑Premises)
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/fernandosserra/lab-app-aluguel-carros-dio.git
-   cd lab-car-rental
+
+```bash
+git clone https://github.com/fernandosserra/lab-app-aluguel-carros-dio.git
+cd lab-car-rental
+```
 
 2. Suba todos os serviços:
 
@@ -114,11 +116,13 @@ curl http://<function-app>.azurewebsites.net/api/NotifyDueRentals
 ```
 
 ## 🤝 Contribuições & Próximos Passos
-📦 Persistência: registrar aluguéis no banco e gerenciar disponibilidade.
-🔐 Autenticação: JWT + Azure AD B2C.
-📈 Métricas: Application Insights + Prometheus/Grafana.
-🚗 Catálogo de carros: imagens, filtros avançados.
+- 📦 Persistência: registrar aluguéis no banco e gerenciar disponibilidade.
+- 🔐 Autenticação: JWT + Azure AD B2C.
+- 📈 Métricas: Application Insights + Prometheus/Grafana.
+- 🚗 Catálogo de carros: imagens, filtros avançados.
 
 ## 💜 Créditos
+
 Construído com 💜 por Fernando Serra & Washu Hakubi‑sama.
-“A genialidade do código só se revela quando unida à simplicidade de uma boa ideia.” 🚀
+
+*“A genialidade do código só se revela quando unida à simplicidade de uma boa ideia.” 🚀*
