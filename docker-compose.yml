@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: car-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/app:/app/app
+    environment:
+      - DATABASE_URL=sqlite:///./app/test.db
+
+  functions:
+    build:
+      context: ./functions
+      dockerfile: Dockerfile
+    container_name: car-functions
+    ports:
+      - "7071:80"
+    environment:
+      - AzureWebJobsStorage=UseDevelopmentStorage=true
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: car-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+      - functions
